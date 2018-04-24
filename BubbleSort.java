@@ -1,4 +1,6 @@
 
+package sorts;
+
 public class BubbleSort {
 
 	public static void main(String[] args) {
@@ -18,7 +20,7 @@ public class BubbleSort {
 		boolean swap = false;
 		for(int i = 1; i <= array.length; i++) {
 			swap = false;
-			for(int j = 0; j < array.length - i; j++) { // Sabemos que el mayor quedará hasta el final.
+			for(int j = 0; j < array.length - i; j++) { // Sabemos que el mayor quedarÃ¡ hasta el final.
 				if(graterThan(array[j], array[j + 1])) {
 					swap(array, j, j + 1);
 					swap = true;
